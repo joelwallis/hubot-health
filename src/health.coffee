@@ -15,8 +15,4 @@
 #   Joel Wallis Jucá <joelwallis@gmail.com>
 
 module.exports = (robot) ->
-  robot.respond /hello/, (res) ->
-    res.reply "hello!"
-
-  robot.hear /orly/, (res) ->
-    res.send "yarly"
+  robot.router.get '/health', (req, res) -> res.status(200).end()

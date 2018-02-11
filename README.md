@@ -1,16 +1,16 @@
 # hubot-health
 
-A hubot script that does the things
-
-See [`src/health.coffee`](src/health.coffee) for full documentation.
+This Hubot script adds a `/health` endpoint that responds a `200 OK` status with no content. Useful for automated health checking.
 
 ## Installation
 
 In hubot project repo, run:
 
-`npm install hubot-health --save`
+```
+npm install --save hubot-health
+```
 
-Then add **hubot-health** to your `external-scripts.json`:
+Then add `hubot-health` to your `external-scripts.json`:
 
 ```json
 [
@@ -18,13 +18,8 @@ Then add **hubot-health** to your `external-scripts.json`:
 ]
 ```
 
-## Sample Interaction
+Restart your Hubot to have the `/health` endpoint available.
 
-```
-user1>> hubot hello
-hubot>> hello!
-```
+## License
 
-## NPM Module
-
-https://www.npmjs.com/package/hubot-health
+[ISC](license)
